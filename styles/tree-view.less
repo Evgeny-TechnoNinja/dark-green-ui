@@ -1,0 +1,46 @@
+.tree-view {
+  font-size: @font-size;
+  background: @tree-view-background-color;
+
+  .selected:before {
+    background: @tree-view-item-selected-color;
+    box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+  }
+}
+
+.tree-view-resizer {
+  .tree-view-resize-handle {
+    width: 8px;
+  }
+}
+
+.focusable-panel {
+  opacity: 1;
+  box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+
+  &:focus {
+    background: @tree-view-background-unfocused-color;
+
+    .list-item {
+      color: #ededed;
+    }
+
+    .selected:before {
+      background: @background-color-selected;
+    }
+  }
+}
+
+
+.status-ignored {
+  .list-item {
+    color: lighten(@theme-color1, 25%) !important;
+  }
+}
+
+[data-show-on-right-side=true] {
+  .tree-view .selected:before,
+  .focusable-panel {
+    box-shadow: inset 3px 0 0 rgba(0,0,0, .05);
+  }
+}
