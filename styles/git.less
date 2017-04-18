@@ -4,3 +4,13 @@
 .status-modified { .text(warning); }
 .status-removed { .text(error); }
 .status-renamed { .text(info); }
+
+.list-tree li.list-nested-item,
+.list-tree li.list-nested-item.selected {
+  &.status { .text(normal); }
+  &.status-added { .text(success); }
+  &.status-ignored { .text(subtle); }
+  &.status-modified { .text(warning); }
+  &.status-removed { .text(error); }
+  &.status-renamed { .text(info); }
+}
