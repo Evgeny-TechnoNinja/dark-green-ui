@@ -1,7 +1,7 @@
 {
   "name": "dark-green-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A custom UI theme for Atom for developers who want a green with Atom",
   "license": "MIT",
   "repository": "https://github.com/justinhough/dark-green-ui",
