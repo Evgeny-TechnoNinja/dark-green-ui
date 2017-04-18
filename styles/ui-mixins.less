@@ -7,31 +7,62 @@
 }
 .text(subtle) {
   font-weight: normal;
-  color: @text-color-subtle;
+  color: @text-color-ignored;
   text-shadow: none;
+
+  & > .list-item {
+    color: @text-color-ignored;
+  }
 }
 .text(highlight) {
   font-weight: normal;
   color: @text-color-highlight;
   text-shadow: 0 1px 0 rgba(0,0,0, .5);
+
+  & > .list-item {
+    color: @text-color-highlight;
+  }
 }
 .text(selected) {
   .text(highlight)
+
+  & > .list-item {
+    color: @text-color-highlight;
+  }
 }
 
 .text(info) {
   color: @text-color-info;
   text-shadow: none;
+
+  & > .list-item {
+    color: @text-color-info;
+  }
 }
+
 .text(success) {
   color: @text-color-success;
   text-shadow: none;
+
+  & > .list-item {
+    color: @text-color-success;
+  }
 }
+
 .text(warning) {
   color: @text-color-warning;
   text-shadow: none;
+
+  & > .list-item {
+    color: @text-color-warning;
+  }
 }
+
 .text(error) {
   color: @text-color-error;
   text-shadow: none;
+
+  & > .list-item {
+    color: @text-color-error;
+  }
 }
