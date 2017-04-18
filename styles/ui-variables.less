@@ -9,7 +9,7 @@
 
 @text-color: @theme-color5;
 @text-color-subtle: #fff;
-@text-color-highlight: #fff;
+@text-color-highlight: @theme-color5; // #fff;
 @text-color-selected: @text-color-highlight;
 
 @text-color-info: #5293d8;
@@ -17,7 +17,7 @@
 @text-color-warning: #ff982d;
 @text-color-error: #c00;
 
-@text-color-ignored: @text-color-subtle;
+@text-color-ignored: darken(@theme-color2, 25%); // @text-color-subtle;
 @text-color-added: @text-color-success;
 @text-color-renamed: @text-color-info;
 @text-color-modified: @text-color-warning;
@@ -28,7 +28,7 @@
 @background-color-warning: #ffaa2c;
 @background-color-error: #c00;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: darken(@theme-color2, 25%);
+@background-color-selected: lighten(@theme-color1, 10%);
 
 @app-background-color: @theme-color2;
 
@@ -38,7 +38,7 @@
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: @theme-color3;
+@input-background-color: @theme-color2;
 @input-border-color: @base-border-color;
 
 @tool-panel-background-color: @theme-color1;
